@@ -3,6 +3,7 @@ package com.bbinformatique.menace.ui.game;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.widget.Chronometer;
@@ -17,6 +18,7 @@ public class GameActivity extends AppCompatActivity {
     private Integer counter = 5;
     private Chronometer myChronometer;
     private TextView timeElapsed;
+    private Location currentLocation;
 
     /**
      * Called when GameActivity is first created
@@ -27,10 +29,17 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        //TODO : Tests sur Localisation :
+        currentLocation = new Location("current");
+
+        //Tests sur décompte du temps, puis affichage d'un texte
         myChronometer = (Chronometer) findViewById(R.id.chronometer);
         timeElapsed = (TextView) findViewById(R.id.tv_timeElapsed);
-
         myChronometer.setText(counter + "");
+
+        /**
+         * Listener on chronometer
+         */
         myChronometer.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
             @Override
             public void onChronometerTick(Chronometer chronometer) {
@@ -39,6 +48,10 @@ public class GameActivity extends AppCompatActivity {
         });
         myChronometer.start();
     }
+
+    /**
+     * Events on chronometer
+     */
     private void onChronometerTickHandler(){
         if (this.counter <= 0){
             myChronometer.stop();
