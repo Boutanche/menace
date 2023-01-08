@@ -9,12 +9,8 @@ z
 Japp/src/main/java/com/bbinformatique/menace/ui/login/LoggedInUserView.java,d/1/d1d11b797a3a2bbd1b8ca2fd333a06c7245f110b
 w
 Gapp/src/main/java/com/bbinformatique/menace/ui/login/LoginActivity.java,a/1/a14c13f37086d138f986ce418c73342b71846adb
-u
-Eapp/src/main/java/com/bbinformatique/menace/data/LoginDataSource.java,c/6/c66db8562f939b85607ce5f7e8ec60a77f52c8b3
 x
 Happ/src/main/java/com/bbinformatique/menace/ui/login/LoginFormState.java,8/5/855e037d7dbe4773a4c5370fedff868c1fc859a9
-u
-Eapp/src/main/java/com/bbinformatique/menace/data/LoginRepository.java,0/4/04805429c25924b9e9636d0c3ec69faede44eefa
 u
 Eapp/src/main/java/com/bbinformatique/menace/ui/login/LoginResult.java,3/8/382b621e746520831db5d9a97928d1d65071aa74
 x
@@ -23,7 +19,3 @@ Happ/src/main/java/com/bbinformatique/menace/ui/login/LoginViewModel.java,5/b/5
 Oapp/src/main/java/com/bbinformatique/menace/ui/login/LoginViewModelFactory.java,2/2/22ef7400eea586e3ad9343803ad35c3897d7e758
 w
 Gapp/src/main/java/com/bbinformatique/menace/ui/score/ScoreActivity.java,b/a/ba14557d1646b20d5172c7944da74d1eff325ee6
-l
-<app/src/main/java/com/bbinformatique/menace/data/Result.java,b/b/bb7b3e85c93fc5f78f10fb1e4849d1466c2bfae8
-=
-app/README.md,4/c/4c5b4e01137160a7f4b20b65b547907a29541367
