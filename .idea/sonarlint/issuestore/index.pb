@@ -17,5 +17,18 @@ x
 Happ/src/main/java/com/bbinformatique/menace/ui/login/LoginViewModel.java,5/b/5bf5d3491e29775c52960c7c2ebf07f4d03e48eb
 
 Oapp/src/main/java/com/bbinformatique/menace/ui/login/LoginViewModelFactory.java,2/2/22ef7400eea586e3ad9343803ad35c3897d7e758
-w
-Gapp/src/main/java/com/bbinformatique/menace/ui/score/ScoreActivity.java,b/a/ba14557d1646b20d5172c7944da74d1eff325ee6
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+:
+
+LICENCE.md,0/7/07a03b25588518b2a609dbe824fc503edb628a4a
+l
+<app/src/main/java/com/bbinformatique/menace/data/Result.java,b/b/bb7b3e85c93fc5f78f10fb1e4849d1466c2bfae8
+m
+=app/src/main/java/com/bbinformatique/menace/MainActivity.java,e/a/ea7631798bdb36cc8fc890f0aaac24c058bdc360
+u
+Eapp/src/main/java/com/bbinformatique/menace/data/LoginRepository.java,0/4/04805429c25924b9e9636d0c3ec69faede44eefa
+u
+Eapp/src/main/java/com/bbinformatique/menace/data/LoginDataSource.java,c/6/c66db8562f939b85607ce5f7e8ec60a77f52c8b3
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

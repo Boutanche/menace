@@ -81,24 +81,27 @@ public class GameActivity extends AppCompatActivity {
         counter--;
     }
 
+    /**
+     * Called when Localisation is first created
+     */
     private void initialiserLocalisation() {
         if (locationManager == null) {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             Criteria criteria = new Criteria();
 
-            // la précision  : (ACCURACY_FINE pour une haute précision ou ACCURACY_COARSE pour une moins bonne précision)
+            // précision  : (ACCURACY_FINE pour une haute précision ou ACCURACY_COARSE pour une moins bonne précision)
             criteria.setAccuracy(Criteria.ACCURACY_FINE);
 
-            // l'altitude
+            // altitude
             criteria.setAltitudeRequired(true);
 
-            // la direction
+            // direction
             criteria.setBearingRequired(true);
 
-            // la vitesse
+            // vitesse
             criteria.setSpeedRequired(true);
 
-            // la consommation d'énergie demandée
+            // consommation d'énergie demandée
             criteria.setCostAllowed(true);
             criteria.setPowerRequirement(Criteria.POWER_HIGH);
 
@@ -134,5 +137,76 @@ public class GameActivity extends AppCompatActivity {
         else {
             Log.d("GPS", "Problème avec la localisation : pas de fournisseur GPS");
         }
+    }
+    /**
+     * Called when the activity is about to become visible.
+     */
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("GPS", "onStart");
+    }
+
+    /**
+     * Called when the activity has become visible.
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("GPS", "onResume");
+    }
+
+    /**
+     * Called when another activity is taking focus.
+     */
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("GPS", "onPause");
+    }
+
+    /**
+     * Called when the activity is no longer visible.
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("GPS", "onStop");
+    }
+
+    /**
+     * Called just before the activity is destroyed.
+     */
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d("GPS", "onDestroy");
+    }
+
+    /**
+     * Called when the activity is restarted.
+     */
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("GPS", "onRestart");
+    }
+
+    /**
+     * Called when the activity is going into the background.
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d("GPS", "onSaveInstanceState");
+    }
+
+    /**
+     * Called after onStart() when the activity is being re-initialized from a previously saved state.
+     */
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d("GPS", "onRestoreInstanceState");
     }
 }
